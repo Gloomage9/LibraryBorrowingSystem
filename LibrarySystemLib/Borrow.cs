@@ -27,7 +27,7 @@ namespace LibrarySystemLib
 
         public void RecordReturn()
         {
-            if (DateReturned.HasValue)
+            if (DateReturned == null)
             {
                 DateReturned = DateTime.Now;
             }

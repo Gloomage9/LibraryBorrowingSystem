@@ -571,7 +571,7 @@
             this.groupBoxStats.Controls.Add(this.label14);
             this.groupBoxStats.Location = new System.Drawing.Point(4, 4);
             this.groupBoxStats.Name = "groupBoxStats";
-            this.groupBoxStats.Size = new System.Drawing.Size(280, 108);
+            this.groupBoxStats.Size = new System.Drawing.Size(673, 108);
             this.groupBoxStats.TabIndex = 0;
             this.groupBoxStats.TabStop = false;
             this.groupBoxStats.Text = "System Statistics";

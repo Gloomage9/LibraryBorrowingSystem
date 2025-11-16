@@ -84,6 +84,8 @@
             this.btnGenerateReport = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.dgvReportOutput = new System.Windows.Forms.DataGridView();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.tabControlMain.SuspendLayout();
             this.tabPageHome.SuspendLayout();
             this.tabPageBook.SuspendLayout();
@@ -161,6 +163,8 @@
             // 
             // groupBoxStudentInfo
             // 
+            this.groupBoxStudentInfo.Controls.Add(this.label18);
+            this.groupBoxStudentInfo.Controls.Add(this.label12);
             this.groupBoxStudentInfo.Controls.Add(this.btnToggleBan);
             this.groupBoxStudentInfo.Controls.Add(this.btnUpdateStudent);
             this.groupBoxStudentInfo.Controls.Add(this.btnRegisterStudent);
@@ -175,19 +179,17 @@
             // 
             // txtStudentName
             // 
-            this.txtStudentName.Location = new System.Drawing.Point(17, 78);
+            this.txtStudentName.Location = new System.Drawing.Point(17, 120);
             this.txtStudentName.Name = "txtStudentName";
-            this.txtStudentName.Size = new System.Drawing.Size(100, 22);
+            this.txtStudentName.Size = new System.Drawing.Size(166, 22);
             this.txtStudentName.TabIndex = 1;
-            this.txtStudentName.Text = "Student Name:";
             // 
             // txtStudentID
             // 
-            this.txtStudentID.Location = new System.Drawing.Point(17, 33);
+            this.txtStudentID.Location = new System.Drawing.Point(17, 59);
             this.txtStudentID.Name = "txtStudentID";
             this.txtStudentID.Size = new System.Drawing.Size(166, 22);
             this.txtStudentID.TabIndex = 0;
-            this.txtStudentID.Text = "Student ID:";
             // 
             // tabPageTransaction
             // 
@@ -569,7 +571,7 @@
             this.groupBoxStats.Controls.Add(this.label14);
             this.groupBoxStats.Location = new System.Drawing.Point(4, 4);
             this.groupBoxStats.Name = "groupBoxStats";
-            this.groupBoxStats.Size = new System.Drawing.Size(724, 108);
+            this.groupBoxStats.Size = new System.Drawing.Size(280, 108);
             this.groupBoxStats.TabIndex = 0;
             this.groupBoxStats.TabStop = false;
             this.groupBoxStats.Text = "System Statistics";
@@ -624,7 +626,7 @@
             this.cmbReportType.FormattingEnabled = true;
             this.cmbReportType.Location = new System.Drawing.Point(141, 128);
             this.cmbReportType.Name = "cmbReportType";
-            this.cmbReportType.Size = new System.Drawing.Size(121, 24);
+            this.cmbReportType.Size = new System.Drawing.Size(172, 24);
             this.cmbReportType.TabIndex = 2;
             // 
             // btnGenerateReport
@@ -655,6 +657,24 @@
             this.dgvReportOutput.RowTemplate.Height = 24;
             this.dgvReportOutput.Size = new System.Drawing.Size(450, 257);
             this.dgvReportOutput.TabIndex = 5;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(17, 37);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(71, 16);
+            this.label12.TabIndex = 5;
+            this.label12.Text = "Student ID:";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(20, 98);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(95, 16);
+            this.label18.TabIndex = 6;
+            this.label18.Text = "Student Name:";
             // 
             // Form1
             // 
@@ -750,6 +770,8 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DataGridView dgvReportOutput;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label18;
     }
 }
 

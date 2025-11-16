@@ -26,12 +26,9 @@ namespace LibraryBorrowingSystemApp
             LoadBookDataGrid();
             LoadStudentDataGrids();
             LoadBorrowedList();
-            InitializeReportComboBox(); // Final Setup
+            InitializeReportComboBox(); 
         }
 
-        // =================================================================
-        // DISPLAY / UI HELPER METHODS
-        // =================================================================
 
         private void LoadBookDataGrid()
         {
@@ -72,9 +69,6 @@ namespace LibraryBorrowingSystemApp
             cmbReportType.SelectedIndex = 0;
         }
 
-        // =================================================================
-        // BOOK MANAGEMENT MODULE
-        // =================================================================
 
         private void btnAddBook_Click(object sender, EventArgs e)
         {
@@ -162,10 +156,6 @@ namespace LibraryBorrowingSystemApp
                 MessageBox.Show($"A system error occurred during update: {ex.Message}", "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        // =================================================================
-        // STUDENT MANAGEMENT MODULE
-        // =================================================================
 
         private void btnRegisterStudent_Click(object sender, EventArgs e)
         {
@@ -281,9 +271,6 @@ namespace LibraryBorrowingSystemApp
             }
         }
 
-        // =================================================================
-        // BORROW / RETURN TRANSACTION MODULE
-        // =================================================================
 
         private void btnProcessBorrow_Click(object sender, EventArgs e)
         {
@@ -339,9 +326,6 @@ namespace LibraryBorrowingSystemApp
             txtReturnBookCode.Clear();
         }
 
-        // =================================================================
-        // REPORT MODULE
-        // =================================================================
 
         private void CalculateAndDisplayStatistics()
         {

@@ -27,7 +27,7 @@ namespace LibrarySystemLib
 
         public void RecordReturn()
         {
-            if (DateBorrowed == null)
+            if (DateReturned.HasValue)
             {
                 DateReturned = DateTime.Now;
             }

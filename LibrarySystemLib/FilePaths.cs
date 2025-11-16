@@ -9,19 +9,16 @@ namespace LibrarySystemLib
 {
     public static class FilePaths
     {
-        // Root folder inside My Documents
         private static readonly string RootFolder =
             Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
                          "LibraryBorrowingSystem_Data");
 
-        // Ensure the directory exists BEFORE any file paths are used
         static FilePaths()
         {   
             if (!Directory.Exists(RootFolder))
                 Directory.CreateDirectory(RootFolder);
         }
 
-        // Final, guaranteed-safe file paths
         public static readonly string BooksFile =
             Path.Combine(RootFolder, "Books.txt");
 

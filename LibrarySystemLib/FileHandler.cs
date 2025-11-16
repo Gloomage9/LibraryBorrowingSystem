@@ -171,7 +171,12 @@ namespace LibrarySystemLib
             {
                 using (StreamWriter writer = new StreamWriter(FilePaths.TransactionsFile, true))
                 {
-                    writer.WriteLine($"{transaction.TransactionID},{transaction.StudentID},{transaction.BookCode},{transaction.DateBorrowed},{transaction.DateReturned}");
+                    string borrowDate = transaction.DateBorrowed.ToString("o"); 
+                    string returnDate = transaction.DateReturned.HasValue
+                                        ? transaction.DateReturned.Value.ToString("o")
+                                        : "";
+
+                    writer.WriteLine($"{transaction.TransactionID},{transaction.StudentID},{transaction.BookCode},{borrowDate},{returnDate}");
                 }
             }
             catch (Exception ex)
@@ -188,7 +193,12 @@ namespace LibrarySystemLib
                 {
                     foreach (Borrow t in transactions)
                     {
-                        writer.WriteLine($"{t.TransactionID},{t.StudentID},{t.BookCode},{t.DateBorrowed},{t.DateReturned}");
+                        string borrowDate = t.DateBorrowed.ToString("o");
+                        string returnDate = t.DateReturned.HasValue
+                                            ? t.DateReturned.Value.ToString("o")
+                                            : "";
+
+                        writer.WriteLine($"{t.TransactionID},{t.StudentID},{t.BookCode},{borrowDate},{returnDate}");
                     }
                 }
             }

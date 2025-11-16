@@ -36,7 +36,7 @@ namespace LibrarySystemLib
 
             if (Accounts.Count == 0)
             {
-                Accounts.Add(new Account("manager", "Mr. Ilaoo", "pass123", "Manager"));
+                Accounts.Add(new Account("manager", "Mr. Ilao", "pass123", "Manager"));
                 FileHandler.SaveAccounts(Accounts);
             }
         }
